@@ -70,8 +70,8 @@ footer {
     padding: 0;
     margin-bottom: 0px;
     text-align: center;
-    align-items: center;
-    justify-content: center;
+    /* align-items: center; */
+    /* justify-content: center; */
 }
 
 .fa {
