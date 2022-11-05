@@ -342,8 +342,6 @@
         fetch(element.link)
             .then(response => response.json())
             .then(items => {
-                // var items = JSON.parse(atob(data.content));
-
                 var section = document.getElementById(element.sectionId);
                 var template = document.getElementById(element.templateId);
 
