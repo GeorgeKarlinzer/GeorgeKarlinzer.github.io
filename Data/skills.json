@@ -42,7 +42,7 @@
         "skillLevel": 4
     },
     {
-        "name": "JavaScript, Typescript, HTML, CSS"
+        "name": "JavaScript, Typescript, HTML, CSS",
         "isPrimary": false,
         "icon": "fa-solid fa-code",
         "skillLevel": 3
