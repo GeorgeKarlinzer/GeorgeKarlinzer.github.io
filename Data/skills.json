@@ -42,10 +42,10 @@
         "skillLevel": 4
     },
     {
-        "name": "JavaScript, HTML, Python, C, C++, PHP",
+        "name": "JavaScript, Typescript, HTML, CSS
         "isPrimary": false,
         "icon": "fa-solid fa-laptop-code",
-        "skillLevel": 2
+        "skillLevel": 3
     },
     {
         "name": "Linux",
