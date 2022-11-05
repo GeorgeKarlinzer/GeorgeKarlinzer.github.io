@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="https://kit.fontawesome.com/c0103ba154.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" type="text/css"
+        href="https://rawcdn.githack.com/GeorgeKarlinzer/CV-Content/95df76ae4b81d4c1db3d23edc17b277806cfde97/Styles/app.css">
+
+    <script type="text/javascript">
+        function showSkills() {
+            document.getElementsByName("hiddable-skill")
+                .forEach(x => {
+                    x.classList.remove("hidden");
+                });
+
+            var btn = document.getElementById("show-skills-btn");
+            btn.textContent = "Hide";
+            btn.onclick = hideSkills;
+        }
+
+        function hideSkills() {
+            document.getElementsByName("hiddable-skill")
+                .forEach(x => {
+                    x.classList.add("hidden")
+                })
+
+            var btn = document.getElementById("show-skills-btn");
+            btn.textContent = "Show all";
+            btn.onclick = showSkills;
+        }
+
+        function addHr(element) {
+            var hr = document.createElement('hr');
+            element.appendChild(hr);
+        }
+
+        function generateSkill(skill, template, section, isLast) {
+            var skillEl = template.content.cloneNode(true).querySelector('div');
+            var fullStarClasses = 'fa fa-solid fa-star';
+            var emptyStartClasses = 'fa fa-regular fa-star';
+
+            // Set hiddability if skill is not primary
+            if (!skill.isPrimary) {
+                skillEl.className = 'hidden';
+                skillEl.setAttribute('name', 'hiddable-skill');
+            }
+
+            // Set skill icon and name
+            var skillNameEl = skillEl.querySelector('p');
+            var skillNameIconEl = skillNameEl.querySelector('i');
+            skillNameIconEl.className = 'fa ' + skill.icon;
+            skillNameEl.innerHTML += skill.name;
+
+            // Set stars according to skill level
+            var starsEl = skillEl.querySelectorAll('div > i');
+            for (var i = 1; i <= 5; i++) {
+                starsEl[i - 1].className = i <= skill.skillLevel ? fullStarClasses : emptyStartClasses;
+            }
+
+            if (!isLast) addHr(skillEl);
+            section.appendChild(skillEl);
+        }
+
+        function generateProject(project, template, section, isLast) {
+            var projectEl = template.content.cloneNode(true).querySelector('div');
+
+            // Set name
+            var nameEl = projectEl.querySelector('h3 a');
+            nameEl.setAttribute('href', project.link);
+            nameEl.innerHTML = project.name;
+
+            // Set technologies
+            var technologiesEl = projectEl.querySelector('h4');
+            technologiesEl.innerHTML = project.technologies.join(', ');
+
+            // Set description
+            var descriptionEl = projectEl.querySelector('p');
+            descriptionEl.innerHTML = project.description;
+
+            if (!isLast) addHr(projectEl);
+            section.appendChild(projectEl);
+        }
+
+        function generateEducation(education, template, section, isLast) {
+            var educationEl = template.content.cloneNode(true).querySelector('div');
+
+            // Set education title
+            var titleEl = educationEl.querySelector('h3');
+            titleEl.innerHTML = education.title;
+
+            // Set dates
+            var datesEl = educationEl.querySelector('h4');
+            datesEl.innerHTML += `${education.startDate} - ${education.finishDate}`;
+            if (education.isCurrent) {
+                var span = document.createElement('span');
+
+                span.setAttribute('class', 'cv-text-filled');
+                span.innerHTML = 'Current';
+
+                datesEl.appendChild(span);
+            }
+
+            // Set description
+            var descriptionEl = educationEl.querySelector('p');
+            descriptionEl.innerHTML = education.description;
+
+            if (!isLast) addHr(educationEl);
+            section.appendChild(educationEl);
+        }
+
+        function generateJob(job, template, section, isLast) {
+            var jobEl = template.content.cloneNode(true).querySelector('div');
+
+            // Set job title
+            var titleEl = jobEl.querySelector('h3');
+            titleEl.innerHTML = job.title;
+
+            // Set dates
+            var datesEl = jobEl.querySelector('h4');
+            datesEl.innerHTML += `${job.startDate} - ${job.finishDate}`;
+            if (job.isCurrent) {
+                var span = document.createElement('span');
+
+                span.setAttribute('class', 'cv-text-filled');
+                span.innerHTML = 'Current';
+
+                datesEl.appendChild(span);
+            }
+
+            // Set description
+            var descriptionEl = jobEl.querySelector('p');
+            descriptionEl.innerHTML = job.description;
+
+            if (!isLast) addHr(jobEl);
+            section.appendChild(jobEl);
+        }
+
+    </script>
+
+
+    <style></style>
+</head>
+
+<body>
+    <div class="cv-page margin-top">
+        <div class="cv-content">
+            <div class="cv-content-left shadow">
+                <div class="cv-personal-data">
+                    <div class="cv-avatar">
+                        <img class="cv-avatar-img"
+                            src="https://github.com/GeorgeKarlinzer/CV-Content/blob/main/Images/avatar.jpg?raw=true"
+                            alt="Avatar">
+                        <div class="cv-avatar-name margin-left">
+                            <h2>Heorhi Kupryianau</h2>
+                        </div>
+                    </div>
+                    <div class="cv-contact-data margin-left margin-right">
+                        <p>
+                            <i class="fa fa-solid fa-computer-mouse"></i>
+                            .Net Developer
+                        </p>
+                        <p>
+                            <i class="fa fa-solid fa-house"></i>
+                            Poland, Kraków
+                        </p>
+
+                        <p>
+                            <i class="fa fa-solid fa-phone"></i>
+                            +48 731 396 083
+                        </p>
+                        <p>
+                            <i class="fa fa-solid fa-envelope"></i>
+                            h.kupryianau@gmail.com
+                        </p>
+                    </div>
+                    <hr>
+                </div>
+
+                <div class="margin-left margin-right">
+                    <div id="skills-section">
+                        <h3>
+                            <i class="fa fa-solid fa-dumbbell"></i>
+                            Skills
+                        </h3>
+                        <template id="skill-template">
+                            <div>
+                                <p style="width: 100%;">
+                                    <i class="fa fa-solid fa-hammer"></i>
+                                    <!-- SkillName -->
+                                </p>
+                                <i class="fa fa-solid fa-star"></i>
+                                <i class="fa fa-solid fa-star"></i>
+                                <i class="fa fa-solid fa-star"></i>
+                                <i class="fa fa-regular fa-star"></i>
+                                <i class="fa fa-regular fa-star"></i>
+                            </div>
+                        </template>
+                    </div>
+                    <button id="show-skills-btn" class="button-3 margin-bottom margin-top" onclick="showSkills()"
+                        role="button">Show all</button>
+                </div>
+                <hr>
+                <div class="margin-left margin-right margin-bottom">
+                    <h3>
+                        <i class="fa fa-solid fa-language"></i>
+                        Languages
+                    </h3>
+
+                    <p style="width: 100%;">
+                        English
+                    </p>
+                    <i class="fa fa-solid fa-star"></i>
+                    <i class="fa fa-solid fa-star"></i>
+                    <i class="fa fa-solid fa-star"></i>
+                    <i class="fa fa-solid fa-star"></i>
+                    <i class="fa fa-regular fa-star"></i>
+                    <p style="width: 100%;">
+                        Polish
+                    </p>
+                    <i class="fa fa-solid fa-star"></i>
+                    <i class="fa fa-solid fa-star"></i>
+                    <i class="fa fa-solid fa-star"></i>
+                    <i class="fa fa-solid fa-star"></i>
+                    <i class="fa fa-solid fa-star"></i>
+                    <p style="width: 100%;">
+                        Russian
+                    </p>
+                    <i class="fa fa-solid fa-star"></i>
+                    <i class="fa fa-solid fa-star"></i>
+                    <i class="fa fa-solid fa-star"></i>
+                    <i class="fa fa-solid fa-star"></i>
+                    <i class="fa fa-solid fa-star"></i>
+                </div>
+            </div>
+
+            <div class="cv-content-right margin-left">
+                <div class="cv-content-box shadow margin-bottom">
+                    <br>
+                    <h1 class="margin-left margin-right" style="margin-bottom: 40px;">
+                        <i class="fa fa-solid fa-gear"></i>
+                        Work Experience
+                    </h1>
+                    <div id="jobs-section" class="cv-content-box-section">
+                        <template id="job-template">
+                            <div>
+                                <h3>Job Title</h3>
+                                <h4>
+                                    <i class="fa fa-solid fa-calendar"></i>
+                                    <!-- Dates -->
+                                </h4>
+                                <p>Description</p>
+                            </div>
+                        </template>
+                    </div>
+                    <br>
+                </div>
+                <div class="cv-content-box shadow margin-bottom">
+                    <br>
+                    <h1 class="margin-left margin-right" style="margin-bottom: 40px;">
+                        <i class="fa fa-solid fa-school"></i>
+                        Education
+                    </h1>
+                    <div id="educations-section" class="cv-content-box-section">
+                        <template id="education-template">
+                            <div>
+                                <h3>School name</h3>
+                                <h4>
+                                    <i class="fa fa-solid fa-calendar"></i>
+                                    <!-- Dates-->
+                                </h4>
+                                <p>Description</p>
+                            </div>
+                        </template>
+                    </div>
+                    <br>
+                </div>
+                <div class="cv-content-box shadow margin-bottom">
+                    <br>
+                    <h1 class="margin-left margin-right" style="margin-bottom: 40px;">
+                        <i class="fa fa-solid fa-folder-open"></i>
+                        Projects
+                    </h1>
+                    <div id="projects-section">
+                        <template id="project-template">
+                            <div class="cv-content-box-section">
+                                <h3>
+                                    <a href="url">Name</a>
+                                </h3>
+                                <h4>
+                                    Technology 1, Technology 2, ...
+                                </h4>
+                                <p>Project description</p>
+                            </div>
+                        </template>
+                    </div>
+                    <br>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <div>
+                <p>Links</p>
+                <i class="fa-brands fa-linkedin"></i>
+                <i class="fa-brands fa-github"></i>
+                <i class="fa-brands fa-facebook"></i>
+                <img src="https://www.codewars.com/packs/assets/logo.61192cf7.svg" style="width: 20px; height: 20px;">
+            </div>
+        </footer>
+    </div>
+
+</body>
+<script>
+    var dynamicElements = [
+        {
+            link: 'https://api.github.com/repos/GeorgeKarlinzer/CV-Content/contents/Data/skills.json',
+            sectionId: 'skills-section',
+            templateId: 'skill-template',
+            function: generateSkill
+        },
+        {
+            link: 'https://api.github.com/repos/GeorgeKarlinzer/CV-Content/contents/Data/projects.json',
+            sectionId: 'projects-section',
+            templateId: 'project-template',
+            function: generateProject
+        },
+        {
+            link: 'https://api.github.com/repos/GeorgeKarlinzer/CV-Content/contents/Data/educations.json',
+            sectionId: 'educations-section',
+            templateId: 'education-template',
+            function: generateEducation
+        },
+        {
+            link: 'https://api.github.com/repos/GeorgeKarlinzer/CV-Content/contents/Data/jobs.json',
+            sectionId: 'jobs-section',
+            templateId: 'job-template',
+            function: generateJob
+        }
+    ];
+
+    function b64DecodeUnicode(str) {
+        return decodeURIComponent(atob(str).split('').map(function (c) {
+            return '%' + ('00' + c.charCodeAt(0).toString(16)).slice(-2);
+        }).join(''));
+    }
+
+    dynamicElements.forEach(element => {
+        fetch(element.link)
+            .then(response => response.json())
+            .then(data => {
+                var items = JSON.parse(b64DecodeUnicode(data.content));
+
+                var section = document.getElementById(element.sectionId);
+                var template = document.getElementById(element.templateId);
+
+                items.forEach(item => {
+                    element.function(item, template, section, items.at(-1) == item);
+                });
+            })
+    });
+</script>
+
+</html>

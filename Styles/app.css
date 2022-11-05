@@ -1,0 +1,159 @@
+.button-3 {
+    appearance: none;
+    background-color: #048BC2;
+    border: 1px solid rgba(27, 31, 35, .15);
+    border-radius: 6px;
+    box-shadow: rgba(27, 31, 35, .1) 0 1px 0;
+    box-sizing: border-box;
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    font-family: -apple-system, system-ui, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 20px;
+    padding: 6px 16px;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    vertical-align: middle;
+    white-space: nowrap;
+}
+
+.button-3:focus:not(:focus-visible):not(.focus-visible) {
+    box-shadow: none;
+    outline: none;
+}
+
+.button-3:hover {
+    background-color: #04739e;
+}
+
+.button-3:focus {
+    box-shadow: rgba(46, 164, 79, .4) 0 0 0 3px;
+    outline: none;
+}
+
+.button-3:disabled {
+    background-color: #94d3a2;
+    border-color: rgba(27, 31, 35, .1);
+    color: rgba(255, 255, 255, .8);
+    cursor: default;
+}
+
+.button-3:active {
+    background-color: #025f83;
+    box-shadow: rgba(20, 70, 32, .2) 0 1px 0 inset;
+}
+
+body {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background: #b6b6b6;
+    margin: 0;
+    padding: 0;
+}
+
+hr {
+    border: 0;
+    margin-left: 20px;
+    margin-right: 20px;
+    border-top: 1px solid #eee;
+}
+
+footer {
+    background-color: #048BC2;
+    width: 100%;
+    height: 100px;
+    padding: 0;
+    margin-bottom: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.fa {
+    color: #048BC2;
+    width: 1.3em;
+    text-align: center;
+}
+
+.cv-text-filled {
+    color: white;
+    background-color: #048BC2;
+    border-radius: 4px;
+    padding: 2px;
+}
+
+.shadow {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.3);
+}
+
+.hidden {
+    display: none;
+}
+
+.margin-left {
+    margin-left: 20px;
+}
+
+.margin-right {
+    margin-right: 20px;
+}
+
+.margin-bottom {
+    margin-bottom: 20px;
+}
+
+.margin-top {
+    margin-top: 20px
+}
+
+.cv-content {
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+}
+
+.cv-content-left {
+    margin-left: 80px;
+    width: 30%;
+    color: rgb(116, 116, 116);
+    background-color: white;
+}
+
+.cv-avatar {
+    display: block;
+    position: relative;
+}
+
+.cv-avatar-img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.cv-avatar-name {
+    color: black;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.cv-content-right {
+    width: calc(100% - 30% - 80px - 20px - 80px);
+    margin-right: 80px;
+}
+
+.cv-content-box {
+    width: 100%;
+    background-color: white;
+}
+
+.cv-content-box-section {
+    margin-left: 30px;
+    margin-right: 30px;
+}

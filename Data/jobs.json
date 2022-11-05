@@ -1,0 +1,16 @@
+[
+    {
+        "title": "Game developer - Freelance",
+        "startDate": "Jan 2020",
+        "finishDate": "Mar 2022",
+        "isCurrent": false,
+        "description": "Lorem ipsum dolor sit amet. Praesentium magnam consectetur vel in deserunt aspernatur est reprehenderit sunt hic. Nulla tempora soluta ea et odio, unde doloremque repellendus iure, iste."
+    },
+    {
+        "title": ".Net Developer - Elettric80",
+        "startDate": "Mar 2022",
+        "finishDate": "",
+        "isCurrent": true,
+        "description": "Lorem ipsum dolor sit amet. Praesentium magnam consectetur vel in deserunt aspernatur est reprehenderit sunt hic. Nulla tempora soluta ea et odio, unde doloremque repellendus iure, iste."
+    }
+]
