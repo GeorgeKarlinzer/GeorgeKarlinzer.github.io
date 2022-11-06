@@ -127,8 +127,8 @@ function generateJob(job, template, section, isLast) {
 }
 
 function replaceES(str){
-    str = str.replace('\n', '<br>');
-    str = str.replace('\t', '&emsp;&emsp;');
+    str = str.replaceAll('\n', '<br>');
+    str = str.replaceAll('\t', '&emsp;&emsp;');
     return str;
 }
 
