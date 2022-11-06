@@ -120,10 +120,16 @@ function generateJob(job, template, section, isLast) {
 
     // Set description
     var descriptionEl = jobEl.querySelector('p');
-    descriptionEl.innerHTML = job.description;
+    descriptionEl.innerHTML = replaceES(job.description);
 
     if (!isLast) addHr(jobEl);
     section.appendChild(jobEl);
+}
+
+function replaceES(str){
+    str = str.replace('\n', '<br>');
+    str = str.replace('\t', '&emsp');
+    return str;
 }
 
 
