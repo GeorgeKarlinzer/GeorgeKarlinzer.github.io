@@ -4,13 +4,13 @@
         "startDate": "Jan 2020",
         "finishDate": "Mar 2022",
         "isCurrent": false,
-        "description": "\tI used to develop games with Unity (C#), from simple simulation to complex 2D strategies (some samples are availible on my GitHub).\n\tDuring that time I've learnt a lot about OOP, C#, algorithms and data structures."
+        "description": "I used to develop games with Unity (C#), from simple simulation to complex 2D strategies (some samples are availible on my GitHub).\nDuring that time I've learnt a lot about OOP, C#, algorithms and data structures."
     },
     {
         "title": ".Net Developer - Elettric80",
         "startDate": "Mar 2022",
         "finishDate": "",
         "isCurrent": true,
-        "description": "\tI mainly develop WPF MVVM applications and connect it to the SQL SERVER database using EntityFramework and DataBase First approach.\n\tMost of the project is developed in group, where show good soft and lidership skills.\n\tOur team uses SCRUM methodology during project development.\n\tAlso I setup tools for monitoring, collecting, and visualisation system data using Grafana and Prometheus."
+        "description": "I mainly develop WPF MVVM applications and connect it to the SQL SERVER database using EntityFramework and DataBase First approach.\nMost of the project is developed in group, where show good soft and lidership skills.\nOur team uses SCRUM methodology during project development.\nAlso I setup tools for monitoring, collecting, and visualisation system data using Grafana and Prometheus."
     }
 ]
