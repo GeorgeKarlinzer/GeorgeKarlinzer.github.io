@@ -3,24 +3,56 @@
         "name": "Chess",
         "link": "https://github.com/GeorgeKarlinzer/Chess",
         "technologies": [
-            "ASP.NET Core", "React.js"
+            "ASP.NET Core", "React.js", ".Net Core"
         ],
         "description": "Lorem ipsum dolor sit amet. Praesentium magnam consectetur vel in deserunt aspernatur est reprehenderit sunt hic. Nulla tempora soluta ea et odio, unde doloremque repellendus iure, iste."
     },
     {
-        "name": "Chess",
-        "link": "https://github.com/GeorgeKarlinzer/Chess",
+        "name": "Continued-Fraction-Factorization",
+        "link": "https://github.com/GeorgeKarlinzer/Continued-Fraction-Factorization",
         "technologies": [
-            "ASP.NET Core", "React.js"
+            "Python"
         ],
-        "description": "Lorem ipsum dolor sit amet. Praesentium magnam consectetur vel in deserunt aspernatur est reprehenderit sunt hic. Nulla tempora soluta ea et odio, unde doloremque repellendus iure, iste."
+        "description": "Project shows the implementation of one of the most efficient factorization algorithms."
     },
     {
-        "name": "Chess",
-        "link": "https://github.com/GeorgeKarlinzer/Chess",
+        "name": "Machine-Learning",
+        "link": "https://github.com/GeorgeKarlinzer/Machine-Learning",
         "technologies": [
-            "ASP.NET Core", "React.js"
+            "Jupyter Notebook", "Python"
         ],
-        "description": "Lorem ipsum dolor sit amet. Praesentium magnam consectetur vel in deserunt aspernatur est reprehenderit sunt hic. Nulla tempora soluta ea et odio, unde doloremque repellendus iure, iste."
+        "description": "There are two projects related with Machine Learinng.\n The first one is Autoencoder and the second one contains different methods for detection network anomalies."
+    },
+    {
+        "name": "Database Project",
+        "link": "https://github.com/GeorgeKarlinzer/DBProject",
+        "technologies": [
+            "SQL Server (TSQL)", ".Net Core"
+        ],
+        "description": "Project contains database side of conference manager system."
+    },
+    {
+        "name": "Chat",
+        "link": "https://github.com/GeorgeKarlinzer/Chat",
+        "technologies": [
+            "WPF", "WCF", "SQL Server (TSQL)", ".Net"
+        ],
+        "description": "There are client and server applications that allow clients to communicate in real time."
+    },
+    {
+        "name": "Strategy game",
+        "link": "https://github.com/GeorgeKarlinzer/Feudal-Simulator-Game-Scripts",
+        "technologies": [
+            "Unity", "C#"
+        ],
+        "description": "Repository contains script for 2D strategy game."
+    },
+    {
+        "name": "Destroy it game",
+        "link": "https://github.com/GeorgeKarlinzer/Destroy_it_Game",
+        "technologies": [
+            "Unity", "C#"
+        ],
+        "description": "Repository contains script for 2D game."
     }
 ]
