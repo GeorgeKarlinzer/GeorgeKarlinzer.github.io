@@ -127,7 +127,6 @@ function generateJob(job, template, section, isLast) {
 }
 
 
-
 var dynamicElements = [
     {
         link: 'https://georgekarlinzer.github.io/Data/skills.json',
