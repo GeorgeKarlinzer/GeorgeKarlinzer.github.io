@@ -66,7 +66,7 @@ function generateProject(project, template, section, isLast) {
 
     // Set description
     var descriptionEl = projectEl.querySelector('p');
-    descriptionEl.innerHTML = project.description;
+    descriptionEl.innerHTML = replaceES(project.description);
 
     if (!isLast) addHr(projectEl);
     section.appendChild(projectEl);
@@ -93,7 +93,7 @@ function generateEducation(education, template, section, isLast) {
 
     // Set description
     var descriptionEl = educationEl.querySelector('p');
-    descriptionEl.innerHTML = education.description;
+    descriptionEl.innerHTML = replaceES(education.description);
 
     if (!isLast) addHr(educationEl);
     section.appendChild(educationEl);
@@ -128,7 +128,7 @@ function generateJob(job, template, section, isLast) {
 
 function replaceES(str){
     str = str.replace('\n', '<br>');
-    str = str.replace('\t', '&emsp');
+    str = str.replace('\t', '&emsp;&emsp;');
     return str;
 }
 
