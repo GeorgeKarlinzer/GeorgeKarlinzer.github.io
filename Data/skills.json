@@ -36,10 +36,10 @@
         "skillLevel": 4
     },
     {
-        "name": "Data Structures, Algorithms, LINQ ",
+        "name": "Data Structures, Algorithms, LINQ, Math",
         "isPrimary": false,
         "icon": "fa-solid fa-hammer",
-        "skillLevel": 4
+        "skillLevel": 5
     },
     {
         "name": "JavaScript, Typescript, HTML, CSS",
@@ -51,6 +51,18 @@
         "name": "Linux",
         "isPrimary": false,
         "icon": "fa-brands fa-linux",
+        "skillLevel": 3
+    },
+    {
+        "name": "Cybersecurity",
+        "isPrimary": false,
+        "icon": "fa-solid fa-shield-halved",
+        "skillLevel": 4
+    },
+    {
+        "name": "Python, C++, C",
+        "isPrimary": false,
+        "icon": "fa-solid fa-rectangle-terminal",
         "skillLevel": 3
     }
 ]
