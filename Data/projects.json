@@ -3,7 +3,7 @@
         "name": "Chess",
         "link": "https://github.com/GeorgeKarlinzer/Chess",
         "technologies": [
-            "ASP.NET Core", "React.js", "Web sockets", ".Net Core"
+            "ASP.NET Core", "React.js", "SQL Server (TSQL)", ".Net Core", "Web sockets"
         ],
         "description": "Complete online chess game."
     },
