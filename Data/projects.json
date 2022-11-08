@@ -45,7 +45,7 @@
         "technologies": [
             "Unity", "C#"
         ],
-        "description": "Repository contains script for 2D strategy game."
+        "description": "Repository contains scripts for complex 2D strategy game."
     },
     {
         "name": "Destroy it game",
@@ -53,6 +53,6 @@
         "technologies": [
             "Unity", "C#"
         ],
-        "description": "Repository contains script for 2D game."
+        "description": "Repository contains scripts for 2D game."
     }
 ]
