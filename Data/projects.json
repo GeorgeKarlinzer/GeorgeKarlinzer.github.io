@@ -3,9 +3,9 @@
         "name": "Chess",
         "link": "https://github.com/GeorgeKarlinzer/Chess",
         "technologies": [
-            "ASP.NET Core", "React.js", ".Net Core"
+            "ASP.NET Core", "React.js", "Web sockets", ".Net Core"
         ],
-        "description": "Lorem ipsum dolor sit amet. Praesentium magnam consectetur vel in deserunt aspernatur est reprehenderit sunt hic. Nulla tempora soluta ea et odio, unde doloremque repellendus iure, iste."
+        "description": "Complete online chess game."
     },
     {
         "name": "Continued-Fraction-Factorization",
