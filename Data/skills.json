@@ -62,7 +62,7 @@
     {
         "name": "Python, C++, C",
         "isPrimary": false,
-        "icon": "fa-solid fa-rectangle-terminal",
+        "icon": "fa-solid fa-keyboard",
         "skillLevel": 3
     }
 ]
