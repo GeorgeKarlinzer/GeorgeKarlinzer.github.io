@@ -152,6 +152,7 @@ a:visited.logo {
 .cv-content-left {
     margin-left: 80px;
     width: 25%;
+    min-width: 150px;
     background-color: white;
 }
 
