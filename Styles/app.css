@@ -152,7 +152,7 @@ a:visited.logo {
 .cv-content-left {
     margin-left: 80px;
     width: 25%;
-    min-width: 150px;
+    min-width: 200px;
     background-color: white;
 }
 
@@ -176,6 +176,7 @@ a:visited.logo {
 
 .cv-content-right {
     width: calc(100% - 25% - 80px - 20px - 80px);
+    min-width: 500px;
 }
 
 .cv-content-box {
