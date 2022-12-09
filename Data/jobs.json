@@ -11,6 +11,6 @@
         "startDate": "Mar 2022",
         "finishDate": "",
         "isCurrent": true,
-        "description": "I mainly develop WPF MVVM applications and connect it to the SQL Server database using EntityFramework and DataBase First approach.\nMost of the project is developed in group, where show good soft and lidership skills.\nOur team uses SCRUM methodology during project development.\nAlso I setup tools for monitoring, collecting, and visualisation system data using Grafana and Prometheus."
+        "description": "I mainly develop WPF MVVM applications and connect it to the SQL Server database using EntityFramework and DataBase First approach.\nMost of the project is developed in group, where I show good soft and lidership skills.\nOur team uses SCRUM methodology during project development.\nAlso I setup tools for monitoring, collecting, and visualisation system data using Grafana and Prometheus."
     }
 ]

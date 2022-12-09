@@ -6,14 +6,32 @@
         "skillLevel": 4
     },
     {
-        "name": "ASP.NET Core",
+        "name": "JavaScript, Typescript, HTML, CSS",
         "isPrimary": true,
+        "icon": "fa-solid fa-code",
+        "skillLevel": 3
+    },
+    {
+        "name": "Git",
+        "isPrimary": true,
+        "icon": "fa-brands fa-git-alt",
+        "skillLevel": 4
+    },
+    {
+        "name": "Sql Server",
+        "isPrimary": true,
+        "icon": "fa-solid fa-database",
+        "skillLevel": 4
+    },
+    {
+        "name": "ASP.NET Core",
+        "isPrimary": false,
         "icon": "fa-solid fa-server",
         "skillLevel": 3
     },
     {
         "name": "React.js",
-        "isPrimary": true,
+        "isPrimary": false,
         "icon": "fa-brands fa-react",
         "skillLevel": 3
     },
@@ -24,28 +42,10 @@
         "skillLevel": 4
     },
     {
-        "name": "Git",
-        "isPrimary": false,
-        "icon": "fa-brands fa-git-alt",
-        "skillLevel": 4
-    },
-    {
-        "name": "Sql Server",
-        "isPrimary": false,
-        "icon": "fa-solid fa-database",
-        "skillLevel": 4
-    },
-    {
         "name": "Data Structures, Algorithms, LINQ, Math",
         "isPrimary": false,
         "icon": "fa-solid fa-hammer",
         "skillLevel": 5
-    },
-    {
-        "name": "JavaScript, Typescript, HTML, CSS",
-        "isPrimary": false,
-        "icon": "fa-solid fa-code",
-        "skillLevel": 3
     },
     {
         "name": "Linux",
