@@ -25,43 +25,43 @@
     },
     {
         "name": "ASP.NET Core",
-        "isPrimary": false,
+        "isPrimary": true,
         "icon": "fa-solid fa-server",
         "skillLevel": 3
     },
     {
         "name": "React.js",
-        "isPrimary": false,
+        "isPrimary": true,
         "icon": "fa-brands fa-react",
         "skillLevel": 3
     },
     {
         "name": "Wpf",
-        "isPrimary": false,
+        "isPrimary": true,
         "icon": "fa-solid fa-desktop",
         "skillLevel": 4
     },
     {
         "name": "Data Structures, Algorithms, LINQ, Math",
-        "isPrimary": false,
+        "isPrimary": true,
         "icon": "fa-solid fa-hammer",
         "skillLevel": 5
     },
     {
         "name": "Linux",
-        "isPrimary": false,
+        "isPrimary": true,
         "icon": "fa-brands fa-linux",
         "skillLevel": 3
     },
     {
         "name": "Cybersecurity",
-        "isPrimary": false,
+        "isPrimary": true,
         "icon": "fa-solid fa-shield-halved",
         "skillLevel": 4
     },
     {
         "name": "Python, C++, C",
-        "isPrimary": false,
+        "isPrimary": true,
         "icon": "fa-solid fa-keyboard",
         "skillLevel": 3
     }
