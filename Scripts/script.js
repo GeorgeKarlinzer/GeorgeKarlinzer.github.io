@@ -135,7 +135,8 @@ function replaceES(str){
 
 var dynamicElements = [
     {
-        link: 'https://georgekarlinzer.github.io/Data/skills.json',
+        // link: 'https://georgekarlinzer.github.io/Data/skills.json',
+        link: './Data/skills.json',
         sectionId: 'skills-section',
         templateId: 'skill-template',
         function: generateSkill
