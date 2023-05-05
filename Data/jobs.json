@@ -8,9 +8,16 @@
     },
     {
         "title": ".Net Developer - Elettric80",
+        "startDate": "Jan 2021",
+        "finishDate": "Mar 2022",
+        "isCurrent": false,
+        "description": "I'd mainly developed WPF MVVM applications and connected it to the SQL Server database using EntityFramework and DataBase First approach.\nMost of the project is developed in group, where I shown good soft and lidership skills.\nOur team had used SCRUM methodology during project development.\nAlso I'd setuped tools for monitoring, collecting, and visualisation system data using Grafana and Prometheus."
+    },
+    {
+        "title": ".Net Developer - Sente",
         "startDate": "Mar 2022",
         "finishDate": "",
         "isCurrent": true,
-        "description": "I mainly develop WPF MVVM applications and connect it to the SQL Server database using EntityFramework and DataBase First approach.\nMost of the project is developed in group, where I show good soft and lidership skills.\nOur team uses SCRUM methodology during project development.\nAlso I setup tools for monitoring, collecting, and visualisation system data using Grafana and Prometheus."
+        "description": "My main responsobility is the developing of ERP systems. This is tightly connected with Client-Server architecture, so C# and JavaScript are my main tools. Also part of these systems uses VCL technology, so sometimes I analise and write C++/Delphi code. Of corse databases are widely used as well, mainly Firebird, less often MSSQL. We have a large team, so Git, Jira and communication skills are strictly required."
     }
 ]

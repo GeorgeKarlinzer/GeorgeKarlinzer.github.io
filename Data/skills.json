@@ -1,9 +1,15 @@
 [
     {
-        "name": ".Net/.Net Core (C#)",
+        "name": ".Net / .Net Core (C#)",
         "isPrimary": true,
         "icon": "fa-solid fa-keyboard",
         "skillLevel": 4
+    },
+    {
+        "name": "ASP.NET Core",
+        "isPrimary": true,
+        "icon": "fa-solid fa-server",
+        "skillLevel": 3
     },
     {
         "name": "JavaScript, Typescript, HTML, CSS",
@@ -12,22 +18,22 @@
         "skillLevel": 3
     },
     {
+        "name": "Entity framework",
+        "isPrimary": true,
+        "icon": "fa-solid fa-keyboard",
+        "skillLevel": 4
+    },
+    {
+        "name": "Sql Server / Firebird",
+        "isPrimary": true,  
+        "icon": "fa-solid fa-keyboard",
+        "skillLevel": 4
+    },
+    {
         "name": "Git",
         "isPrimary": true,
         "icon": "fa-brands fa-git-alt",
         "skillLevel": 4
-    },
-    {
-        "name": "Sql Server",
-        "isPrimary": true,
-        "icon": "fa-solid fa-database",
-        "skillLevel": 4
-    },
-    {
-        "name": "ASP.NET Core",
-        "isPrimary": true,
-        "icon": "fa-solid fa-server",
-        "skillLevel": 3
     },
     {
         "name": "React.js",
@@ -42,7 +48,7 @@
         "skillLevel": 4
     },
     {
-        "name": "Data Structures, Algorithms, LINQ, Math",
+        "name": "LINQ, Data Structures, Algorithms, Math",
         "isPrimary": true,
         "icon": "fa-solid fa-hammer",
         "skillLevel": 5
