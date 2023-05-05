@@ -135,26 +135,25 @@ function replaceES(str){
 
 var dynamicElements = [
     {
-        // link: 'https://georgekarlinzer.github.io/Data/skills.json',
-        link: './Data/skills.json',
+        link: 'http://localhost:8080/Data/skills.json',
         sectionId: 'skills-section',
         templateId: 'skill-template',
         function: generateSkill
     },
     {
-        link: 'https://georgekarlinzer.github.io/Data/projects.json',
+        link: 'http://localhost:8080/Data/projects.json',
         sectionId: 'projects-section',
         templateId: 'project-template',
         function: generateProject
     },
     {
-        link: 'https://georgekarlinzer.github.io/Data/educations.json',
+        link: 'http://localhost:8080/Data/educations.json',
         sectionId: 'educations-section',
         templateId: 'education-template',
         function: generateEducation
     },
     {
-        link: 'https://georgekarlinzer.github.io/Data/jobs.json',
+        link: 'http://localhost:8080/Data/jobs.json',
         sectionId: 'jobs-section',
         templateId: 'job-template',
         function: generateJob
