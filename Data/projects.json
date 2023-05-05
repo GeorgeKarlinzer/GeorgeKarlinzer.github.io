@@ -8,22 +8,6 @@
         "description": "Complete online chess game."
     },
     {
-        "name": "Continued-Fraction-Factorization",
-        "link": "https://github.com/GeorgeKarlinzer/Continued-Fraction-Factorization",
-        "technologies": [
-            "Python"
-        ],
-        "description": "Project shows the implementation of one of the most efficient factorization algorithms."
-    },
-    {
-        "name": "Machine-Learning",
-        "link": "https://github.com/GeorgeKarlinzer/Machine-Learning",
-        "technologies": [
-            "Jupyter Notebook", "Python"
-        ],
-        "description": "There are two projects related with Machine Learinng.\n The first one is Autoencoder and the second one contains different methods for detection network anomalies."
-    },
-    {
         "name": "Database Project",
         "link": "https://github.com/GeorgeKarlinzer/DBProject",
         "technologies": [
@@ -54,5 +38,21 @@
             "Unity", "C#"
         ],
         "description": "Repository contains scripts for 2D game."
+    }
+    {
+        "name": "Continued-Fraction-Factorization",
+        "link": "https://github.com/GeorgeKarlinzer/Continued-Fraction-Factorization",
+        "technologies": [
+            "Python"
+        ],
+        "description": "Project shows the implementation of one of the most efficient factorization algorithms."
+    },
+    {
+        "name": "Machine-Learning",
+        "link": "https://github.com/GeorgeKarlinzer/Machine-Learning",
+        "technologies": [
+            "Jupyter Notebook", "Python"
+        ],
+        "description": "There are two projects related with Machine Learinng.\n The first one is Autoencoder and the second one contains different methods for detection network anomalies."
     }
 ]
